@@ -1,46 +1,46 @@
 <%- contentFor('body') %>
 
-<h1>Contact Me</h1>
+<div class="d-flex justify-content-center">
 
-<form action="Data.html" method="get" enctype="text/plain">
-   <!--Information Gathering-->
-   <br>
-   <label for="Full Name">Full Name:</label>
-   <br>
-   <input type="text" id="Full Name" placeholder="John Doe">
-   <br>
-   <br>
-   <label for="Email">Email:</label>
-   <br>
-   <textarea id="Email" cols="30" required placeholder="johndoe@gmail.com"></textarea>
-   <br>
-   <br>
-   <label for="Phone Number">Phone Number:</label>
-   <br>
-   <input type="text" id="Phone Number" placeholder="123-456-7890" required maxlength="17" minlength="3"> <!--longest phone number is 17 digits (North Korea) and shortest is 3 (New Zealand). This is also why I didn't use the "pattern" attribute-->
-   <br>
-   <br>
-   <!--Dropdown Menu-->
-   <label for"Reason">Reason:</label>
-   <br>
-   <select>
-      <option value="Questions">Questions</option>
-      <option value="Concerns">Concerns</option>
-      <option value="Business Inquiries">Business Inquiries</option>
-      <option value="Personal Inquiries">Personal Inquiries</option>
-      <option value="Other">Other</option>
-   </select>
-   <br>
-   <br>
-   <label for="Message">Message:</label>
-   <br>
-   <textarea id="Message" rows="5" cols="50" required placeholder="Enter message"></textarea>
-   <br>
-   <!--Reset and Submit Buttons-->
-   <br>
-   <button class="btn btn-primary">Reset</button>
-   <br>
-   <br>
-   <button class="btn btn-primary">Submit</button>
-</form>
+<div class="card bg-secondary p-3" style="max-width: 30rem;">
+<div class="card-body d-flex flex-column align-items-center p-3 ">
 
+<!-- Title -->
+<h1 class="card-title pt-3" style="text-align: center;">Contact Me</h1>
+
+<!-- Name -->
+  <div class="pb-1">
+    <label for="inputName" class="col-form-label">Name:</label>
+  </div>
+  <div class="col-auto">
+    <input style="text-align: center;" type="name" id="inputName" class="form-control" aria-describedby="name" placeholder="John Doe">
+  </div>
+
+<!-- Email -->
+  <div class="pt-3 pb-1">
+    <label for="inputEmail" class="col-form-label">Email:</label>
+  </div>
+  <div class="col-auto">
+    <input style="text-align: center;" type="email" id="inputEmail" class="form-control" aria-describedby="email" placeholder="johndoe@gmail.com">
+  </div>
+
+<!-- Phone Number -->
+  <div class="pt-3 pb-1">
+    <label for="inputNum" class="col-form-label">Phone Number:</label>
+  </div>
+  <div class="col-auto">
+    <input style="text-align: center;" type="num" id="inputNum" class="form-control" aria-describedby="number" placeholder="(123)-456-7890">
+  </div>
+
+<!-- Message -->
+<div class="p-3">
+  <label for="messageField" class="form-label">Message:</label>
+</div>
+  <textarea class="form-control" id="messageField" rows="3" cols="50" placeholder="Enter Message"></textarea>
+
+<div class="pt-4">
+<button type="button" class="btn btn-outline-dark btn-lg">Submit</button>
+</div>
+</div>
+</div>
+</div>

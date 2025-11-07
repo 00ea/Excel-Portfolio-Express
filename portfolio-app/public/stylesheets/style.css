@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  padding-top: 170px;
   font: 17px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -16,4 +16,8 @@ a {
 
 #headnav .nav-item {
     margin-left: 1rem;
+}
+
+:root {
+  color-scheme: light dark;
 }
