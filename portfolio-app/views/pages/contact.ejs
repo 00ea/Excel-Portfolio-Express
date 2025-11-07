@@ -1,0 +1,47 @@
+<% layout('layout') %> 
+
+<h1>Contact Me</h1>
+
+<form action="Data.html" method="get" enctype="text/plain">
+   <!--Information Gathering-->
+   <br>
+   <label for="Full Name">Full Name:</label>
+   <br>
+   <input type="text" id="Full Name" placeholder="John Doe">
+   <br>
+   <br>
+   <label for="Email">Email:</label>
+   <br>
+   <textarea id="Email" cols="30" required placeholder="johndoe@gmail.com"></textarea>
+   <br>
+   <br>
+   <label for="Phone Number">Phone Number:</label>
+   <br>
+   <input type="text" id="Phone Number" placeholder="123-456-7890" required maxlength="17" minlength="3"> <!--longest phone number is 17 digits (North Korea) and shortest is 3 (New Zealand). This is also why I didn't use the "pattern" attribute-->
+   <br>
+   <br>
+   <!--Dropdown Menu-->
+   <label for"Reason">Reason:</label>
+   <br>
+   <select>
+      <option value="Questions">Questions</option>
+      <option value="Concerns">Concerns</option>
+      <option value="Business Inquiries">Business Inquiries</option>
+      <option value="Personal Inquiries">Personal Inquiries</option>
+      <option value="Other">Other</option>
+   </select>
+   <br>
+   <br>
+   <label for="Message">Message:</label>
+   <br>
+   <textarea id="Message" rows="5" cols="50" required placeholder="Enter message"></textarea>
+   <br>
+   <!--Reset and Submit Buttons-->
+   <br>
+   <input type="reset" style="height: 35px; width: 70px;">
+   <br>
+   <br>
+   <button class="btn btn-primary">Submit</button>
+   <input type="submit" value="Submit" style="height: 60px; width: 100px;">
+</form>
+
