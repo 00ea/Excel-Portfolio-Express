@@ -21,4 +21,9 @@ router.get('/contact', function(req, res, next) {
   res.render('contact');
 });
 
+/* GET success page. */
+router.get('/success', function(req, res, next) {
+  res.render('success');
+});
+
 module.exports = router;

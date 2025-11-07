@@ -18,6 +18,10 @@ a {
     margin-left: 1rem;
 }
 
-:root {
-  color-scheme: light dark;
+body {
+    background-image: url('/images/bgimage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
