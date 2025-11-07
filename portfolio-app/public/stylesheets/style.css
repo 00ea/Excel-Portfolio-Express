@@ -9,12 +9,11 @@ a {
 
 #footnav {
     padding-top: 0.25rem;   
-    padding-bottom: 0.25rem; 
-    padding-right: 12rem;
+    padding-bottom: 0rem; 
+    padding-right: 0rem;
 }
 
-#headnav {
-    padding-top: 0.25rem;   
-    padding-bottom: 0.25rem; 
-    padding-right: 12rem;
+
+#headnav .nav-item {
+    margin-left: 3.5rem;
 }
